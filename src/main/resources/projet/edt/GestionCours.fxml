@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableView?>
+
+<VBox xmlns:fx="http://javafx.com/fxml"
+      fx:controller="projet.GestionCoursController"
+      spacing="10">
+    <padding>
+        <Insets top="10" right="10" bottom="10" left="10"/>
+    </padding>
+    <children>
+        <Label text="Gestion des Cours" styleClass="label-title"/>
+        <HBox spacing="10">
+            <TextField fx:id="nomField" promptText="Nom"/>
+            <TextField fx:id="typeField" promptText="Type"/>
+            <TextField fx:id="dureeField" promptText="Durée"/>
+            <Button fx:id="addButton" text="Ajouter" onAction="#handleAdd"
+                    styleClass="button-primary"/>
+        </HBox>
+        <TableView fx:id="coursTable" prefHeight="300"/>
+    </children>
+</VBox>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="360.0" prefWidth="560.0" stylesheets="@style.css" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/23.0.1" fx:controller="projet.EDTController">
+  <children>
+    <TableView fx:id="edtTable" prefHeight="360" prefWidth="560">
+      <columns>
+        <TableColumn fx:id="colCours" prefWidth="270.6666774749756" text="Cours" />
+        <TableColumn fx:id="colHeure" prefWidth="137.33331298828125" text="Heure" />
+        <TableColumn fx:id="colSalle" prefWidth="148.66671752929688" text="Salle" />
+      </columns>
+    </TableView>
+  </children>
+</AnchorPane>
