@@ -10,7 +10,6 @@ module org.example.projet_final_java {
     requires org.kordamp.bootstrapfx.core;
     requires eu.hansolo.tilesfx;
     requires com.almasb.fxgl.all;
-    requires java.sql;
 
 
     opens projet to javafx.graphics, javafx.fxml;

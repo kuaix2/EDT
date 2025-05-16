@@ -1,7 +1,8 @@
-package projet;
+package controller;
 
 import javafx.fxml.FXML;
 import javafx.scene.control.MenuItem;
+import projet.Utils;
 
 public class DashboardController {
     @FXML private MenuItem menuEdt;
