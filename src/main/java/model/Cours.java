@@ -41,6 +41,6 @@ public class Cours {
 
     //Method
     public String getInfos() {
-        return nom + " - " + type + " (" + heureDebut + " to " + heureFin + ")";
+        return "";
     }
 }
