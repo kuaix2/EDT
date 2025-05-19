@@ -21,10 +21,12 @@ public class Notif {
     public String getDestinataire() { return destinataire; }
     public void setDestinataire(String destinataire) { this.destinataire = destinataire; }
 
-    //Method
-    public void envoyerNotif() {
-        System.out.println("Envoi de la notification à " + destinataire + " : " + contenu);
-        // TODO: implement
+    @Override
+    public String toString() {
+        return "NOTIF \n" +
+                "id:" + id + "\n+" +
+                "contenu: " + contenu + "\n" +
+                "destinataire" + destinataire ;
     }
 
 

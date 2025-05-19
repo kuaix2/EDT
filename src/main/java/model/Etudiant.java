@@ -5,7 +5,7 @@ public class Etudiant extends Utilisateur {
 
     //Constructor
     public Etudiant(int id, String nom, String prenom, String email, String mdp) {
-        super(id, nom, prenom, email, mdp); // initialise Utilisateur
+        super(id, nom, prenom, email, mdp);
         this.id = id;
     }
 
@@ -13,14 +13,10 @@ public class Etudiant extends Utilisateur {
     public int getId() {return id;}
     public void setId(int id) {this.id = id;}
 
-    //Method
-    public void consulterEmplois() {
-        System.out.println("L'étudiant consulte son emploi du temps.");
-        // TODO: implémenter
-    }
-
-    public void voirSalleInfo() {
-        System.out.println("L'étudiant consulte les infos de la salle.");
-        // TODO: implémenter
+    @Override
+    public String toString() {
+        return "STUDENT \n" +
+                "id:" + id + "\n+" +
+                "nom: " + nom + "\n";
     }
 }

@@ -13,15 +13,12 @@ public class Enseignant extends Utilisateur {
     public int getId() { return id; }
     public void setId(int id) { this.id = id; }
 
-
-    //Method
-    public void consulterEmplois() {
-        System.out.println("L'enseignant consulte son emploi du temps.");
-        // TODO: implement
+    @Override
+    public String toString() {
+        return "ENSEIGNAT \n" +
+                "id:" + id + "\n+" +
+                "nom: " + nom + "\n";
     }
 
-    public void notifierAdmin() {
-        System.out.println("L'enseignant notifie l'admin.");
-        // TODO: implement
-    }
 }
+

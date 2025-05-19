@@ -39,8 +39,12 @@ public class Cours {
     public LocalTime getHeureFin() { return heureFin; }
     public void setHeureFin(LocalTime heureFin) { this.heureFin = heureFin; }
 
-    //Method
-    public String getInfos() {
-        return "";
+
+    @Override
+    public String toString() {
+        return "id:" + id + "\n+" +
+                "nom: " + nom + "\n" +
+                "type: " + type + "\n" +
+                "duree: " + duree + "\n";
     }
 }

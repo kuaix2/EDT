@@ -32,8 +32,5 @@ public class Utilisateur {
     public String getMdp() { return mdp; }
     public void setMdp(String mdp) { this.mdp = mdp; }
 
-    //Method
-    public void connecter() {
-        // TODO: implement login logic
-    }
+
 }
